@@ -26,9 +26,6 @@ index=security_logs sourcetype=linux_secure "Failed password"
 | stats count by host, user, src
 | sort - count
 
-## 📊 Query Output
-
-Here’s an example of the failed SSH login search in Splunk:
-
 ![Failed Logins Table](screenshots/failed_logins_table.png)
+
 
