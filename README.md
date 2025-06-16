@@ -25,6 +25,7 @@ A project to detect failed SSH login attempts using Splunk.
 index=security_logs sourcetype=linux_secure "Failed password"
 | stats count by host, user, src
 | sort - count
+```
 
 ![Failed Logins Table](screenshots/failed_logins_table.png)
 
