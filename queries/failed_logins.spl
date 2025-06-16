@@ -1,0 +1,3 @@
+index=security_logs sourcetype=linux_secure "Failed password"
+| stats count by host, user, src
+| sort - count
